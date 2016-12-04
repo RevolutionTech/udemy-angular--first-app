@@ -16,7 +16,8 @@ import {
   template: `
     <ng-content></ng-content>
     <hr>
-    <p>{{bindable}}</p>
+    <p #boundParagraph>{{bindable}}</p>
+    <p>{{boundParagraph.textContent}}</p>
   `,
   styles: []
 })
